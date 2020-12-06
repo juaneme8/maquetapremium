@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Mirrored from maquetapremium.debluebyte.com/facturacion.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Nov 2020 16:57:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="00C3A5"/>
+<title>Powermeter</title>
+<link rel="stylesheet" media="all" href="assets/css/screen.css"/>
+<link rel="stylesheet" media="all" href="assets/css/_calendar.html"/>
+<link rel="stylesheet" media="all" href="assets/css/min/style.min.css"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+
+    <link rel="stylesheet" href="../cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="../cdn.datatables.net/responsive/2.2.3/css/responsive.semanticui.min.css">
+    <!-- SEMANTIC UI-->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/semantic-ui%402.4.2/dist/semantic.min.css">
+    <!-- Font Awesome-->
+    <script src="../kit.fontawesome.com/c43c022dac.js" crossorigin="anonymous"></script>
+</head>
+<body class="facturacionBB">
+<header class="site-header header--fixed">
+    <div class="sidebarControl">
+        <div class="logo logo--size-sm" id="logoSidebar"></div>
+    </div>
+
+    <!--a href="#" class="" id="sidebarControl">
+        <i class="fas fa-bars"></i>
+    </a-->
+
+
+    <a href="#" class="btn-hamburger"><span></span></a>
+    <div class="site-header__menu">
+        <a href="#" class="btn-close"></a>
+        <nav class="site-header__nav">
+            <a href="#" class="item" data-tooltip="Notificaciones" data-position="bottom right">
+                <img alt="" src="assets/images/campana.png">
+            </a>
+            <a href="configuracion.html" class="item configuracionTop" data-tooltip="Configuración" data-position="bottom right">
+                <img alt="" src="assets/images/config.png">
+            </a>
+            <a href="soporte.html" class="soporteTop" data-tooltip="Soporte" data-position="bottom right">
+                <img alt="" src="assets/images/faqs.png">
+            </a>
+            <a id="logout" href="#" data-username="Nombre Apellido" data-tooltip="Log Out" data-position="bottom right">
+                <img alt="" src="assets/images/logout.png">
+            </a>
+        </nav>
+        <!--/header-nav-->
+        <ul class="site-header__data">
+            <li>Sucre 942, PB2, CABA.</li>
+            <li>(011) 6091-4859</li>
+            <li>Ventas: ventas@powermeter.com.ar</li>
+            <li>Consultas Técnicas: info@powermeter.com.ar</li>
+        </ul>
+        <div class="logo logo--white logo--size-sm logo--opacity-60"></div>
+    </div>
+</header>
+
+<nav class="main-menu">
+    <ul class="accordionUl">
+        <div class="ui vertical accordion menu">
+            <div class="item simulatedMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item resumenSection">
+                <a class="title withSub withoutAfter">
+                    <img alt="" src="assets/images/first-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Resumen
+                    </span>
+                    <!--h4 class="showTitle">Resumen</h4-->
+                </a>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="index-2.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="mapa.html">Mapa</a>
+                        </li>
+                        <!--li>
+                            <a href="lista.php">Lista</a>
+                        </li-->
+                        <li>
+                            <a href="planta.html">Planta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="facturacion.html" class="title withoutAfter onlyLink">
+                    <img alt="" src="assets/images/five-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Facturación
+                    </span>
+                    <!--h4 class="showTitle">Facturación</h4-->
+                </a>
+            </div>
+            <div class="item">
+                <a class="title withoutAfter onlyLink">
+                    <img alt="" src="assets/images/second-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Auditor
+                    </span>
+                    <!--h4 class="showTitle">Auditor</h4-->
+                </a>
+            </div>
+            <div class="item deSeparador"></div>
+            <div class="item analisisSection">
+                <a class="title withSub withoutAfter">
+                    <img alt="" src="assets/images/four-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Análisis
+                    </span>
+                    <!--h4 class="showTitle">Análisis</h4-->
+                </a>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="instantaneos.html">Instantáneos</a>
+                        </li>
+                        <li>
+                            <a href="historicos.html">Históricos</a>
+                        </li>
+                        <li>
+                            <a href="calidad.html">Calidad</a>
+                        </li>
+                        <li>
+                            <a href="stand-by.html">Stand-by</a>
+                        </li>
+                        <li>
+                            <a href="eventos.html">Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a class="title withoutAfter onlyLink">
+                    <img alt="" src="assets/images/six-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Control
+                    </span>
+                    <!--h4 class="showTitle">Control</h4-->
+                </a>
+            </div>
+        </div>
+    </ul>
+    <!--ul class="logout">
+        <li>
+           <a href="#" class="containDesc" id="closeSidebar" data-tooltip="Abrir menú" data-position="top left">
+                 <i class="fas fa-chevron-right"></i>
+                <span class="nav-text">
+
+                </span>
+            </a>
+        </li>
+    </ul-->
+</nav>
+
+<div class="dimDiv"></div>
+
+
+
+<script>
+    $('.ui.accordion').accordion({'exclusive': false});
+</script>
+
+<div class="block block--device bg-color withSideMenu">
+    <div class="ui secondary pointing menu custom-menu customBread">
+        <div class="oneColumn">
+            <p class="customBreadText">Facturación</p>
+        </div>
+
+        <div class="secondColumn" style="display: flex; vertical-align: middle; align-items: center;">
+            <p class="filterDesc">
+                <span>Variable:</span> &#124; <span>Dispositivos/grupos</span> &#124;
+                <span>
+                    <a href="#"><i class="fas fa-chevron-left"></i></a> 07/02/2020 <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </span>
+            </p>
+            <div class="ui vertical labeled open-filters" onclick="$('#hidden-menu').fadeToggle('500');$('.open-filters,.close-filters').toggle();">
+                <button id="button-event" class="ui labeled icon button filter-home">
+                    <i class="filter icon filter-home"></i>
+                    <p>Filtrar</p>
+                </button>
+            </div>
+            <div class="ui vertical labeled close-filters" style="display: none;" onclick="$('#hidden-menu').fadeToggle('500');$('.open-filters,.close-filters').toggle();">
+                <button id="button-event" class="ui labeled icon button filter-home">
+                    <i class="close icon filter-home"></i>
+                    <p>Filtrar</p>
+                </button>
+            </div>
+
+            <div class="buttons-group right-floated" style="margin-left:15px;">
+              <button class="ui button primary show-modal-scroll">Guardar</button>
+              <button class="ui button show-modal-scroll">Editar</button>
+              <a class="ui button red delete">Eliminar</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-full">
+        <section class="block block--devices" id="localizaciones">
+            <div id="uiTabs" class="ui bottom attached tab segment active noTabStyle" data-tab="fourSub">
+
+                <div class="ui equal width center aligned padded grid newConfig borderLineInstant bg-white" id="hidden-menu" style="display: none;">
+                    <div class="row information">
+                        <div class="column">
+                            <form class="ui form gralForm">
+                                <div class="two fields">
+                                    <div class="field">
+                                        <label class="typeTitle">Localización</label>
+                                        <div class="ui selection dropdown">
+                                            <div class="default text textSelect">Seleccionar</div>
+                                            <i class="dropdown icon"></i>
+                                            <input type="hidden" name="gender" />
+                                            <div class="menu">
+                                                <div class="item" data-value="nivel">Localización 1</div>
+                                                <div class="item" data-value="grupo">Localización 2</div>
+                                                <div class="item" data-value="nivel">Localización 3</div>
+                                                <div class="item" data-value="grupo">Localización 4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="typeTitle">Período</label>
+                                        <div class="ui selection dropdown">
+                                            <div class="default text textSelect">Seleccionar</div>
+                                            <i class="dropdown icon"></i>
+                                            <input type="hidden" name="gender" />
+                                            <div class="menu">
+                                                <div class="item" data-value="nivel" id="target">Nuevo</div>
+                                                <div class="item" data-value="nivel">Mes en curso</div>
+                                                <div class="item" data-value="grupo">Mes en curso + proyección</div>
+                                                <div class="item" data-value="nivel">Proyección</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="hidden" class="hidden">
+                                    <div class="field">
+                                        <label class="typeTitle">Personalizado</label>
+                                    </div>
+
+                                    <div class="fields">
+                                        <div class="eight wide field">
+                                            <div class="ui calendar" id="desde" style="width: 100%;">
+                                                <div class="ui input icon">
+                                                    <div class="ui popup calendar bottom left transition hidden" style="top: 45px; left: 0px; bottom: auto; right: auto;">
+                                                        <table class="ui celled center aligned unstackable table seven column day">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="7">
+                                                                        <span class="link">Febrero 2020</span><span class="prev link"><i class="chevron left icon"></i></span><span class="next link disabled"><i class="chevron right icon"></i></span>
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>D</th>
+                                                                    <th>L</th>
+                                                                    <th>M</th>
+                                                                    <th>M</th>
+                                                                    <th>J</th>
+                                                                    <th>V</th>
+                                                                    <th>S</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="link adjacent disabled">26</td>
+                                                                    <td class="link adjacent disabled">27</td>
+                                                                    <td class="link adjacent disabled">28</td>
+                                                                    <td class="link adjacent disabled">29</td>
+                                                                    <td class="link adjacent disabled">30</td>
+                                                                    <td class="link adjacent disabled">31</td>
+                                                                    <td class="link active focus">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link range">2</td>
+                                                                    <td class="link range">3</td>
+                                                                    <td class="link range">4</td>
+                                                                    <td class="link range">5</td>
+                                                                    <td class="link range">6</td>
+                                                                    <td class="link today range">7</td>
+                                                                    <td class="link disabled">8</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link disabled">9</td>
+                                                                    <td class="link disabled">10</td>
+                                                                    <td class="link disabled">11</td>
+                                                                    <td class="link disabled">12</td>
+                                                                    <td class="link disabled">13</td>
+                                                                    <td class="link disabled">14</td>
+                                                                    <td class="link disabled">15</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link disabled">16</td>
+                                                                    <td class="link disabled">17</td>
+                                                                    <td class="link disabled">18</td>
+                                                                    <td class="link disabled">19</td>
+                                                                    <td class="link disabled">20</td>
+                                                                    <td class="link disabled">21</td>
+                                                                    <td class="link disabled">22</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link disabled">23</td>
+                                                                    <td class="link disabled">24</td>
+                                                                    <td class="link disabled">25</td>
+                                                                    <td class="link disabled">26</td>
+                                                                    <td class="link disabled">27</td>
+                                                                    <td class="link disabled">28</td>
+                                                                    <td class="link disabled">29</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link adjacent disabled">1</td>
+                                                                    <td class="link adjacent disabled">2</td>
+                                                                    <td class="link adjacent disabled">3</td>
+                                                                    <td class="link adjacent disabled">4</td>
+                                                                    <td class="link adjacent disabled">5</td>
+                                                                    <td class="link adjacent disabled">6</td>
+                                                                    <td class="link adjacent disabled">7</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <i class="calendar alternate outline icon"></i>
+                                                    <input class="inputStyle" type="text" placeholder="Desde" id="fecha-desde" name="desde" autocomplete="off" required="" class="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eight wide field">
+                                            <div class="ui calendar" id="hasta" style="width: 100%;">
+                                                <div class="ui input icon">
+                                                    <div class="ui popup calendar top left transition hidden" style="top: auto; left: 0px; bottom: 45px; right: auto;">
+                                                        <table class="ui celled center aligned unstackable table seven column day">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="7">
+                                                                        <span class="link">Febrero 2020</span><span class="prev link disabled"><i class="chevron left icon"></i></span>
+                                                                        <span class="next link disabled"><i class="chevron right icon"></i></span>
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>D</th>
+                                                                    <th>L</th>
+                                                                    <th>M</th>
+                                                                    <th>M</th>
+                                                                    <th>J</th>
+                                                                    <th>V</th>
+                                                                    <th>S</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="link adjacent disabled">26</td>
+                                                                    <td class="link adjacent disabled">27</td>
+                                                                    <td class="link adjacent disabled">28</td>
+                                                                    <td class="link adjacent disabled">29</td>
+                                                                    <td class="link adjacent disabled">30</td>
+                                                                    <td class="link adjacent disabled">31</td>
+                                                                    <td class="link range">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link range">2</td>
+                                                                    <td class="link range">3</td>
+                                                                    <td class="link range">4</td>
+                                                                    <td class="link range">5</td>
+                                                                    <td class="link range">6</td>
+                                                                    <td class="link active today focus">7</td>
+                                                                    <td class="link disabled">8</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link disabled">9</td>
+                                                                    <td class="link disabled">10</td>
+                                                                    <td class="link disabled">11</td>
+                                                                    <td class="link disabled">12</td>
+                                                                    <td class="link disabled">13</td>
+                                                                    <td class="link disabled">14</td>
+                                                                    <td class="link disabled">15</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link disabled">16</td>
+                                                                    <td class="link disabled">17</td>
+                                                                    <td class="link disabled">18</td>
+                                                                    <td class="link disabled">19</td>
+                                                                    <td class="link disabled">20</td>
+                                                                    <td class="link disabled">21</td>
+                                                                    <td class="link disabled">22</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link disabled">23</td>
+                                                                    <td class="link disabled">24</td>
+                                                                    <td class="link disabled">25</td>
+                                                                    <td class="link disabled">26</td>
+                                                                    <td class="link disabled">27</td>
+                                                                    <td class="link disabled">28</td>
+                                                                    <td class="link disabled">29</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="link adjacent disabled">1</td>
+                                                                    <td class="link adjacent disabled">2</td>
+                                                                    <td class="link adjacent disabled">3</td>
+                                                                    <td class="link adjacent disabled">4</td>
+                                                                    <td class="link adjacent disabled">5</td>
+                                                                    <td class="link adjacent disabled">6</td>
+                                                                    <td class="link adjacent disabled">7</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <i class="calendar alternate outline icon"></i>
+                                                    <input class="inputStyle" type="text" placeholder="Hasta" id="fecha-hasta" name="hasta" autocomplete="off" required="" class="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <a href="#" class="ui btnOk mtb-25 mr-15">Consultar</a>
+                                    <!-- <a href="#" id="showBtnThree" onclick="showHideThree()" class="ui btnOk mtb-25">Cargar manualmente</a> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="showDivThree" style="display: none;">
+                    <div class="ui small header subheader" class="mt-25">Carga de datos anteriores manualmente</div>
+
+                    <div class="ui equal width center aligned padded grid newConfig borderLineInstant bg-white">
+                        <div class="row information">
+                            <div class="column">
+                                <form class="ui form gralForm">
+                                    <p class="datosPersonalizado">Personalizado:</p>
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Desde</label>
+                                            <input class="inputStyle" type="date" name="date" />
+                                        </div>
+                                        <div class="field">
+                                            <label class="typeTitle">Hasta</label>
+                                            <input class="inputStyle" type="date" name="date" />
+                                        </div>
+                                    </div>
+
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Nombre del período</label>
+                                            <input class="inputStyle" type="text" name="name" placeholder="Nombre" />
+                                        </div>
+                                        <div class="field">
+                                            <label class="typeTitle">Cargo fijo</label>
+                                            <input class="inputStyle" type="text" name="name" placeholder="$" />
+                                        </div>
+                                    </div>
+
+                                    <p class="datosPersonalizado moreTop">Energía activa:</p>
+
+                                    <div class="three fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Franja horaria</label>
+                                            <div class="ui selection dropdown">
+                                                <div class="default text textSelect">Seleccionar</div>
+                                                <i class="dropdown icon"></i>
+                                                <input type="hidden" name="gender" />
+                                                <div class="menu">
+                                                    <div class="item" data-value="nivel">Con franja horaria</div>
+                                                    <div class="item" data-value="nivel">Sin franja horaria</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="typeTitle">Desde</label>
+                                            <input class="inputStyle" type="time" name="date" />
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="typeTitle">Hasta</label>
+                                            <input class="inputStyle" type="time" name="date" />
+                                        </div>
+                                    </div>
+
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Costo de Energía Activa</label>
+                                            <input class="inputStyle" type="text" name="" placeholder="$" />
+                                        </div>
+                                        <div class="field">
+                                            <label class="typeTitle">Recargo por Energía Activa</label>
+                                            <input class="inputStyle" type="text" name="" placeholder="Recargo" />
+                                        </div>
+                                    </div>
+
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Energía Activa</label>
+                                            <input class="inputStyle" type="text" name="" placeholder="kWh" />
+                                        </div>
+                                        <div class="field">
+                                            <label class="typeTitle">Energía Activa</label>
+                                            <input class="inputStyle" type="text" name="" placeholder="kVARh" />
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <a href="#" class="ui btnOk mtb-25 mr-15 mr-15">Nueva franja de energía</a>
+                                        <a href="#" class="ui btnCancel mtb-25">Eliminar</a>
+                                    </div>
+
+                                    <p class="datosPersonalizado">Demanda de potencia:</p>
+
+                                    <div class="three fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Franja horaria</label>
+                                            <div class="ui selection dropdown">
+                                                <div class="default text textSelect">Seleccionar</div>
+                                                <i class="dropdown icon"></i>
+                                                <input type="hidden" name="gender" />
+                                                <div class="menu">
+                                                    <div class="item" data-value="nivel">Con franja horaria</div>
+                                                    <div class="item" data-value="nivel">Sin franja horaria</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="typeTitle">Desde</label>
+                                            <input class="inputStyle" type="time" name="date" />
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="typeTitle">Hasta</label>
+                                            <input class="inputStyle" type="time" name="date" />
+                                        </div>
+                                    </div>
+
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Costo del período</label>
+                                            <input class="inputStyle" type="text" name="" placeholder="$" />
+                                        </div>
+                                        <div class="field">
+                                            <label class="typeTitle">Potencia contratada</label>
+                                            <input class="inputStyle" type="text" name="" placeholder="kW" />
+                                        </div>
+                                    </div>
+
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <label class="typeTitle">Potencia adquirida</label>
+                                            <input class="inputStyle" type="text" name="" placeholder="kW" />
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <a href="#" class="ui btnOk mtb-25 mr-15">Nueva franja horaria de potencia</a>
+                                        <a href="#" class="ui btnCancel mtb-25">Eliminar</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui centered one cards" id="facturacionCards">
+                    <div class="card">
+                        <div class="content">
+                            <div class="header">Costo</div>
+
+                            <div class="subheader">(Gráfico)</div>
+
+                            <table class="ui celled table generalTables" id="tableCost">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Actual</th>
+                                        <th>Proyectado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label=""><b>Fijo</b></td>
+                                        <td data-label="">$ xxx.xx</td>
+                                        <td data-label="">$ xxx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Energía</b></td>
+                                        <td data-label="">$ xxx.xx</td>
+                                        <td data-label="">$ xxx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Potencia contratada</b></td>
+                                        <td data-label="">$ xxx.xx</td>
+                                        <td data-label="">$ xxx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Potencia adquirida</b></td>
+                                        <td data-label="">$ xxx.xx</td>
+                                        <td data-label="">$ xxx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Potencia excedida</b></td>
+                                        <td data-label="">$ xxx.xx</td>
+                                        <td data-label="">$ xxx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Cos(fi)</b></td>
+                                        <td data-label="">$ xxx.xx</td>
+                                        <td data-label="">$ xxx.xx</td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td data-label=""><b>Total</b></td>
+                                        <td data-label="">$ xxx.xx</td>
+                                        <td data-label="">$ xxx.xx</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="header">Energía activa</div>
+
+                            <div class="subheader">(Gráfico)</div>
+
+                            <table class="ui celled table generalTables" id="tableCost">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Fase R / Disp 1</th>
+                                        <th>Fase S / Disp 2</th>
+                                        <th>Fase T / Disp N</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label=""><b>- E. Activa</b></td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Franja h 1</b></td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Franja h 2</b></td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                        <td data-label="">xx.xx kWH $ xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>+ E. Reactiva</b></td>
+                                        <td data-label="">xx.xx kVARh</td>
+                                        <td data-label="">xx.xx kVARh</td>
+                                        <td data-label="">xx.xx kVARh</td>
+                                        <td data-label="">xx.xx kVARh</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>+ Cos(fi)</b></td>
+                                        <td data-label="">xx.xx $ xx.xx</td>
+                                        <td data-label="">xx.xx $ xx.xx</td>
+                                        <td data-label="">xx.xx $ xx.xx</td>
+                                        <td data-label="">xx.xx $ xx.xx</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="header">Demanda de potencia</div>
+
+                            <div class="subheader">(Gráfico)</div>
+
+                            <table class="ui celled table generalTables" id="tableCost">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Fecha y hora</th>
+                                        <th>Total</th>
+                                        <th>Fase R / Disp 1</th>
+                                        <th>Fase S / Disp 2</th>
+                                        <th>Fase T / Disp N</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label=""><b>- P. Adquirida 1</b></td>
+                                        <td data-label="">xx/xx/xx - xx:xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Franja h 1</b></td>
+                                        <td data-label="">xx/xx/xx - xx:xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>Franja h 2</b></td>
+                                        <td data-label="">xx/xx/xx - xx:xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>+ P. Adquirida 2</b></td>
+                                        <td data-label="">xx/xx/xx - xx:xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label=""><b>+ P. Adquirida N</b></td>
+                                        <td data-label="">xx/xx/xx - xx:xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                        <td data-label="">xx.xx kW $ xx.xx</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Delete Modal -->
+<div class="ui modal modal-delete">
+    <i class="close icon"></i>
+    <div class="header">
+        ¿Estás seguro de eliminar...?
+    </div>
+    <div class="image content">
+        <div class="description">
+            <p>Usted está a punto de eliminar el período de facturación guardado. Este paso no tiene recuperación ¿Desea continuar?</p>
+        </div>
+    </div>
+    <div class="actions">
+        <a class="ui negative right labeled icon button">
+            <span>ELIMINAR</span>
+            <i class="trash icon"></i>
+        </a>
+        <div class="ui button labeled deny">
+            <span>CANCELAR</span>
+        </div>
+    </div>
+</div>
+
+<!-- Load Modal -->
+<form class="ui modal" id="modal-scroll">
+    <!-- Header -->
+    <div class="header">
+        <div class="modal-header" style="display: flex;">
+            <div class="data-modal-header">
+                <span>Datos de factura</span>
+                <i
+                    class="question circle icon"
+                    data-html="
+            <div class='header'>Cargue los datos de su factura eléctrica.</div>
+              <div class='content'>Este paso es opcional, pero le permitirá contar con un análisis comparativo preciso y detectar posibles oportunidades de ahorro debido a desviaciones en medición o cargos facturados incorrectos.
+            </div>
+            <br />
+            <b>Importante.</b> Se recomienda haber cargado previamente los datos de su cuadro tarifario."
+                    data-variation="very wide small"
+                    data-position="bottom left"
+                >
+                </i>
+
+                <a href="configuracion.html">
+                    <i class="icon file alternate outline" data-content="Editar tarifas" data-position="bottom left" data-variation="very wide small"> </i>
+                </a>
+            </div>
+
+            <div class="data-modal-header">
+                <span>Período</span> - <span>Fecha: </span>
+                <span>
+                    <a href="#"><i class="fas fa-chevron-left"></i></a> 07/02/2020 <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fas fa-chevron-left"></i></a> 07/02/2020 <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="scrolling content no-padd">
+        <div class="ui grid centered padded newConfig borderLineInstant">
+            <div class="ui form fifteen wide column bg-white gralForm">
+                <div class="inline fields">
+                    <div class="eight wide field custom-fields" style="align-items: flex-end;">
+                        <label>Nombre del período: </label>
+                        <input type="text" placeholder="" class="wid-40" required />
+                    </div>
+
+                    <div class="eight wide field custom-fields" style="align-items: flex-end;">
+                        <label>
+                            Costo fijo:
+                            <i class="question circle icon" data-content="Costo mensual por ser usuario del servicio eléctrico." data-variation="very wide small"> </i>
+                        </label>
+                        <input type="number" placeholder="" class="wid-60" />
+                        <span class="units">&nbsp</span>
+                    </div>
+                </div>
+
+                <p class="datosPersonalizado"><span>Demanda de potencia</span></p>
+
+                <!-- Completa el backend el nombre de la franja -->
+                <h4>Franja horaria: <span> (Valle() </span></h4>
+
+                <div class="inline fields">
+                    <div class="eight wide field custom-fields">
+                        <label>
+                            Potencia contratada:
+                            <i
+                                class="question circle icon"
+                                data-content="Capacidad de suministro a disposición de ser utilizada por el usuario, previamente acordada por contrato con la prestadora de energía."
+                                data-variation="very wide small"
+                            >
+                            </i>
+                        </label>
+                        <input type="number" placeholder="" class="field wid-30" required />
+                        <span class="units">KW</span>
+                    </div>
+                    <div class="eight wide field custom-fields">
+                        <label>Costo</label>
+                        <input type="number" placeholder="" />
+                        <span class="units">$</span>
+                    </div>
+                </div>
+
+                <div class="inline fields">
+                    <div class="eight wide field custom-fields">
+                        <label>
+                            Potencia adquirida:
+                            <i class="question circle icon" data-content="Potencia máxima utilizada por el usuario, registrada en el periodo de facturación." data-variation="very wide small"> </i>
+                        </label>
+                        <input type="number" placeholder="" class="field wid-30" required />
+                        <span class="units">KW</span>
+                    </div>
+                    <div class="eight wide field custom-fields">
+                        <label>Costo</label>
+                        <input type="number" placeholder="" />
+                        <span class="units">$</span>
+                    </div>
+                </div>
+
+                <!-- <div class="ui grid centered inline fields">
+            <div class="eight wide column">
+              <a id="#" href="#" class="ui btnOk" style="float: right">
+                <i class="fas fa-plus-circle" aria-hidden="true"></i> Nueva franja horaria de potencia
+              </a>
+            </div>
+            <div class="eight wide column">
+              <a href="" class="ui button red" style="float: left">Eliminar</a>
+            </div>
+          </div> -->
+
+                <p class="datosPersonalizado"><span>Energía activa</span></p>
+
+                <!-- Completa el backend -->
+                <h4>Franja horaria: <span> (Valle) </span></h4>
+
+                <div class="inline fields">
+                    <div class="eight wide field custom-fields">
+                        <label>
+                            Energía activa:
+                            <i
+                                class="question circle icon"
+                                data-content="Consumo de energía activa utilizado por el usuario en el período de facturación. Este es uno de los principales parámetros que intervienen en los costos de la factura."
+                                data-variation="very wide small"
+                            >
+                            </i>
+                        </label>
+                        <input type="number" placeholder="" class="field wid-40" required />
+                        <span class="units">kWh</span>
+                    </div>
+                    <div class="eight wide field custom-fields">
+                        <label>Costo</label>
+                        <input type="number" placeholder="" />
+                        <span>$</span>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <div class="eight wide field custom-fields">
+                        <label>
+                            Energía reactiva:
+                            <i
+                                class="question circle icon"
+                                data-content="Consumo de energía reactiva utilizado por el usuario en el período de facturación. Este parámetro interviene en posibles penalizaciones por consumo fuera de límites permitidos."
+                                data-variation="very wide small"
+                            >
+                            </i>
+                        </label>
+                        <input type="number" placeholder="" class="field wid-30" required />
+                        <span class="units">kVARh</span>
+                    </div>
+                    <div class="eight wide field custom-fields">
+                        <label>Recargo</label>
+                        <input type="number" placeholder="" />
+                        <span>$</span>
+                    </div>
+                </div>
+
+                <!-- <div class="ui grid inline fields">
+            <div class="eight wide column">
+              <a id="#" href="#" class="ui btnOk" style="float: right">
+                <i class="fas fa-plus-circle" aria-hidden="true"></i> Nueva franja horaria de energía
+              </a>
+            </div>
+            <div class="eight wide column">
+              <a href="" class="ui button red" style="float: left">Eliminar</a>
+            </div>
+          </div> -->
+
+                <hr style="border-bottom: 1px solic #ccc;" />
+                <div class="buttons-container row">
+                    <button class="ui button primary">
+                        <span>GUARDAR</span>
+                    </button>
+                    <button class="ui button deny">
+                        <span>OMITIR</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+<!--footer class="site-footer">
+    <div class="ui container">
+        <a href="#" class="logo logo--size-sm logo--opacity-30"></a>
+        <ul class="site-footer__data">
+            <li>Sucre 942, PB2, CABA.</li>
+            <li>(011) 6091-4859</li>
+            <li>Ventas: ventas@powermeter.com.ar</li>
+            <li>Consultas Técnicas: info@powermeter.com.ar</li>
+        </ul>
+    </div>
+</footer-->
+
+<footer class="home-footer">
+    <div class="ui grid middle aligned">
+      <div class="one wide column aligned">
+      </div>
+      <div class="one wide column aligned lineImage">
+        <img class="lineImage" src="assets/images/pie-logo-home.png" alt="">
+      </div>
+      <div class="column w-1 lineImage">
+        <img src="assets/images/pie-linea-horizontal.png" alt="">
+      </div>
+      <div class="column aligned w-15 lineImage">
+        <img src="assets/images/pie-logo-power.png" alt="">
+      </div>
+      <div class="column w-1 lineImage">
+        <img src="assets/images/pie-linea-horizontal.png" alt="">
+      </div>
+      <div class="column w-20 lineImage">
+        <ul class="site-footer-data">
+          <li>Sucre 942, PB2, CABA.</li>
+          <li>(011) 6091-4859</li>
+          <li>Ventas: ventas@powermeter.com.ar</li>
+          <li>Consultas Técnicas: info@powermeter.com.ar</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<!-- jQuery (https://jquery.com) -->
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+
+<!-- Semantic UI (https://semantic-ui.com) -->
+<script type="text/javascript" src="assets/js/semantic.min.js"></script>
+
+<!-- Semantic UI Calendar (https://github.com/mdehoog/Semantic-UI-Calendar) -->
+<script type="text/javascript" src="assets/js/calendar.min.js"></script>
+
+<!-- Slick carousel (http://kenwheeler.github.io/slick) -->
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+
+<!-- Form validation (https://semantic-ui.com/behaviors/form.html) -->
+<script type="text/javascript" src="assets/js/form.min.js"></script>
+
+<!-- Funciones propias -->
+<script type="text/javascript" src="assets/js/app.min.js"></script>
+
+<script>
+    var colores_fases_solidos = {
+        'R': 'rgba(255, 99, 132, 0.8)',
+        'S': 'rgba(0, 195, 165, 0.8)',
+        'T': 'rgba(255, 180, 40, 0.8)',
+        'total': 'rgba(100, 100, 100, 0.8)',
+    };
+
+    var colores_fases_transparentes = {
+        'R': 'rgba(255, 99, 132, 0.3)',
+        'S': 'rgba(0, 195, 165, 0.3)',
+        'T': 'rgba(255, 180, 40, 0.3)',
+        'total': 'rgba(100, 100, 100, 0.3)',
+    }
+
+    var colores_simples_solidos = {
+        'principal': 'rgba(0, 195, 165, 0.8)',
+        'secundario': 'rgba(69, 69, 69, 0.8)',
+    }
+
+    var colores_simples_transparentes = {
+        'principal': 'rgba(0, 195, 165, 0.3)',
+        'secundario': 'rgba(69, 69, 69, 0.3)',
+    }
+</script>
+
+<script type="text/javascript" src="assets/js/gauge.min.js"></script>
+<script type="text/javascript" src="../www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="../www.amcharts.com/lib/3/serial.js"></script>
+<script type="text/javascript" src="../www.amcharts.com/lib/3/pie.js"></script>
+<script src="../cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="../cdn.datatables.net/1.10.19/js/dataTables.semanticui.min.js"></script>
+<script src="../cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="../cdn.datatables.net/responsive/2.2.3/js/responsive.semanticui.min.js"></script>
+<!-- Semantic UI Calendar (https://github.com/mdehoog/Semantic-UI-Calendar) -->
+<script type="text/javascript" src="static/vendor/assets/js/calendar.min.html"></script>
+<script src="assets/js/main.js"></script>
+
+    <script>
+  $(document).ready(function() {
+    $('#target').on('click', (evt) => {
+      $('#hidden').toggleClass('show hidden')
+    })
+
+    $('.show-modal-scroll').on('click', (evt) => {
+      $('#modal-scroll').modal('show');
+      $('i.question, i.file').css({
+        'cursor': 'pointer',
+        'color': '#666'
+      }).popup();
+    });
+
+  });
+  </script>
+
+<script>
+
+    $('.ui.pointing.dropdown')
+      .dropdown()
+    ;
+
+    $(document).ready(function () {
+        $('a.delete').on('click', (evt) => {
+            $('.ui.modal.modal-delete .header').text($(evt.target).data('title'));
+            $('.ui.modal.modal-delete .description').text($(evt.target).data('text'));
+            $('.ui.modal.modal-delete .actions a').attr('href', $(evt.target).data('href'));
+            $('.ui.modal.modal-delete').modal('show');
+        })
+
+        $('i.question').css({'cursor': 'pointer', 'color': '#666'}).popup();
+    });
+
+    $(document).ready(function () {
+        // Calender range
+        let calendarMonthFormatter = {
+            date: function (date, settings) {
+                if (!date) return '';
+                var day = date.getDate() + '';
+                if (day.length < 2) {
+                    day = '0' + day;
+                }
+                var month = (date.getMonth() + 1) + '';
+                if (month.length < 2) {
+                    month = '0' + month;
+                }
+                var year = date.getFullYear();
+                return month + '/' + year;
+            }
+        };
+
+        $('#mes').calendar({
+            type: 'month',
+            formatter: calendarMonthFormatter,
+            className: {
+                prev: 'prev link',
+                next: 'next link',
+                prevIcon: 'chevron left icon',
+                nextIcon: 'chevron right icon'
+            },
+            minDate: new Date('2019, 05, 01'), //minimum date/time that can be selected, dates/times before are disabled
+            maxDate: new Date(),
+        });
+
+        $('#mesDos').calendar({
+            type: 'month',
+            formatter: calendarMonthFormatter,
+            className: {
+                prev: 'prev link',
+                next: 'next link',
+                prevIcon: 'chevron left icon',
+                nextIcon: 'chevron right icon'
+            },
+            minDate: new Date('2019, 05, 01'), //minimum date/time that can be selected, dates/times before are disabled
+            maxDate: new Date(),
+        });
+
+        $('#año').calendar({
+            type: 'year',
+            formatter: calendarMonthFormatter,
+            className: {
+                prev: 'prev link',
+                next: 'next link',
+                prevIcon: 'chevron left icon',
+                nextIcon: 'chevron right icon'
+            },
+            minDate: new Date('2000, 01, 01'), //minimum date/time that can be selected, dates/times before are disabled
+            maxDate: new Date(),
+        });
+
+    });
+
+    $('.multi.ui.normal.dropdown')
+      .dropdown({
+        maxSelections: 100
+      })
+    ;
+
+    $(document).ready(function() {
+        $('#tabla').DataTable({
+            "searching": false,
+            "ordering": false,
+            "paging": false,
+            "info": false,
+            responsive: true,
+            columnDefs: [
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority: 2, targets: 4 }
+            ]
+        });
+    } );
+</script>
+
+
+
+</body>
+
+<!-- Mirrored from maquetapremium.debluebyte.com/facturacion.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Nov 2020 16:57:01 GMT -->
+</html>

@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.datatables.net	TRUE	/	FALSE	1999999999	__cfduid	df7807448e043ff5c04018f88b28af8c81605372906
+cdn.datatables.net	TRUE	/	FALSE	1999999999	SameSite	Lax
+.fontawesome.com	TRUE	/	FALSE	1999999999	__cfduid	dcacb2eea0d30458ac9589bc6f0b702f71605372907
+kit.fontawesome.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+.amcharts.com	TRUE	/	FALSE	1999999999	__cfduid	d5f42e2390093e794c6bf5faedae586741605372942
+www.amcharts.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

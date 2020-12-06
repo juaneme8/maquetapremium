@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Mirrored from maquetapremium.debluebyte.com/eventos.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Nov 2020 16:57:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="00C3A5"/>
+<title>Powermeter</title>
+<link rel="stylesheet" media="all" href="assets/css/screen.css"/>
+<link rel="stylesheet" media="all" href="assets/css/_calendar.html"/>
+<link rel="stylesheet" media="all" href="assets/css/min/style.min.css"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+
+    <link rel="stylesheet" href="../cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="../cdn.datatables.net/responsive/2.2.3/css/responsive.semanticui.min.css">
+    <!-- SEMANTIC UI-->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/semantic-ui%402.4.2/dist/semantic.min.css">
+    <!-- Font Awesome-->
+    <script src="../kit.fontawesome.com/c43c022dac.js" crossorigin="anonymous"></script>
+</head>
+<body class="analisisBB eventosSelector">
+<header class="site-header header--fixed">
+    <div class="sidebarControl">
+        <div class="logo logo--size-sm" id="logoSidebar"></div>
+    </div>
+
+    <!--a href="#" class="" id="sidebarControl">
+        <i class="fas fa-bars"></i>
+    </a-->
+
+
+    <a href="#" class="btn-hamburger"><span></span></a>
+    <div class="site-header__menu">
+        <a href="#" class="btn-close"></a>
+        <nav class="site-header__nav">
+            <a href="#" class="item" data-tooltip="Notificaciones" data-position="bottom right">
+                <img alt="" src="assets/images/campana.png">
+            </a>
+            <a href="configuracion.html" class="item configuracionTop" data-tooltip="Configuración" data-position="bottom right">
+                <img alt="" src="assets/images/config.png">
+            </a>
+            <a href="soporte.html" class="soporteTop" data-tooltip="Soporte" data-position="bottom right">
+                <img alt="" src="assets/images/faqs.png">
+            </a>
+            <a id="logout" href="#" data-username="Nombre Apellido" data-tooltip="Log Out" data-position="bottom right">
+                <img alt="" src="assets/images/logout.png">
+            </a>
+        </nav>
+        <!--/header-nav-->
+        <ul class="site-header__data">
+            <li>Sucre 942, PB2, CABA.</li>
+            <li>(011) 6091-4859</li>
+            <li>Ventas: ventas@powermeter.com.ar</li>
+            <li>Consultas Técnicas: info@powermeter.com.ar</li>
+        </ul>
+        <div class="logo logo--white logo--size-sm logo--opacity-60"></div>
+    </div>
+</header>
+
+<nav class="main-menu">
+    <ul class="accordionUl">
+        <div class="ui vertical accordion menu">
+            <div class="item simulatedMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item resumenSection">
+                <a class="title withSub withoutAfter">
+                    <img alt="" src="assets/images/first-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Resumen
+                    </span>
+                    <!--h4 class="showTitle">Resumen</h4-->
+                </a>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="index-2.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="mapa.html">Mapa</a>
+                        </li>
+                        <!--li>
+                            <a href="lista.php">Lista</a>
+                        </li-->
+                        <li>
+                            <a href="planta.html">Planta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="facturacion.html" class="title withoutAfter onlyLink">
+                    <img alt="" src="assets/images/five-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Facturación
+                    </span>
+                    <!--h4 class="showTitle">Facturación</h4-->
+                </a>
+            </div>
+            <div class="item">
+                <a class="title withoutAfter onlyLink">
+                    <img alt="" src="assets/images/second-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Auditor
+                    </span>
+                    <!--h4 class="showTitle">Auditor</h4-->
+                </a>
+            </div>
+            <div class="item deSeparador"></div>
+            <div class="item analisisSection">
+                <a class="title withSub withoutAfter">
+                    <img alt="" src="assets/images/four-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Análisis
+                    </span>
+                    <!--h4 class="showTitle">Análisis</h4-->
+                </a>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="instantaneos.html">Instantáneos</a>
+                        </li>
+                        <li>
+                            <a href="historicos.html">Históricos</a>
+                        </li>
+                        <li>
+                            <a href="calidad.html">Calidad</a>
+                        </li>
+                        <li>
+                            <a href="stand-by.html">Stand-by</a>
+                        </li>
+                        <li>
+                            <a href="eventos.html">Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a class="title withoutAfter onlyLink">
+                    <img alt="" src="assets/images/six-menu.png" style="width:26px; height:26px;">
+                    <span class="nav-text">
+                        Control
+                    </span>
+                    <!--h4 class="showTitle">Control</h4-->
+                </a>
+            </div>
+        </div>
+    </ul>
+    <!--ul class="logout">
+        <li>
+           <a href="#" class="containDesc" id="closeSidebar" data-tooltip="Abrir menú" data-position="top left">
+                 <i class="fas fa-chevron-right"></i>
+                <span class="nav-text">
+
+                </span>
+            </a>
+        </li>
+    </ul-->
+</nav>
+
+<div class="dimDiv"></div>
+
+
+
+<script>
+    $('.ui.accordion').accordion({'exclusive': false});
+</script>
+
+<div class="block block--device bg-color withSideMenu">
+    <div class="ui secondary pointing menu custom-menu customBread">
+        <div class="oneColumn">
+            <p class="customBreadText">Análisis - <span>Eventos</span></p>
+        </div>
+
+        <div class="secondColumn">
+            <div class="ui vertical labeled open-filters" onclick="$('#hidden-menu').fadeToggle('500');$('.open-filters,.close-filters').toggle();">
+                <button id="button-event" class="ui labeled icon button filter-home">
+                    <i class="filter icon filter-home"></i>
+                    <p>Filtrar</p>
+                </button>
+            </div>
+            <div class="ui vertical labeled close-filters" style="display: none;" onclick="$('#hidden-menu').fadeToggle('500');$('.open-filters,.close-filters').toggle();">
+                <button id="button-event" class="ui labeled icon button filter-home">
+                    <i class="close icon filter-home"></i>
+                    <p>Filtrar</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-full">
+        <section class="block block--devices" id="eventos">
+            <div id="uiTabs" class="ui bottom attached tab segment active noTabStyle" data-tab="fiveSub">
+
+                <div id="hidden-menu" class="ui equal width center aligned padded grid newConfig borderLineInstant whiteBgWidth" style="display:none;">
+                    <div class="row mb-25 information">
+                        <div class="column">
+                            <form class="ui form gralForm">
+                                <div class="field">
+                                    <div class="field">
+                                        <label class="typeTitle">Dispositivos:</label>
+                                        <div class="ui selection dropdown">
+                                            <div class="default text textSelect">Seleccionar</div>
+                                            <i class="dropdown icon"></i>
+                                            <input type="hidden" name="gender">
+                                            <div class="menu">
+                                                <div class="item" data-value="nivel">Dispositivo 1</div>
+                                                <div class="item" data-value="grupo">Dispositivo 1.2</div>
+                                                <div class="item" data-value="nivel">Dispositivo 1.3</div>
+                                                <div class="item" data-value="grupo">Dispositivo 1.4</div>
+                                                <div class="item" data-value="grupo">Dispositivo 1.5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sectionToggles">
+                                   <div class="two fields">
+                                        <div class="field disflex">
+                                            <label class="typeTitle">Activar o desactivar opciones:</label>
+                                        </div>
+                                    </div>
+                                    <div class="text-left eventToggle">
+                                        <div class="ui toggle checkbox checked">
+                                            <input type="checkbox" checked="" name="alarmas" tabindex="0" class="hidden"><label>Notificaciones del sistema</label>
+                                        </div>
+                                    </div>
+                                    <div class="text-left eventToggle">
+                                        <div class="ui toggle checkbox checked">
+                                            <input type="checkbox" checked="" name="alarmas" tabindex="0" class="hidden"><label>Alarmas</label>
+                                        </div>
+                                    </div>
+                                    <div class="text-left eventToggle">
+                                        <div class="ui toggle checkbox checked">
+                                            <input type="checkbox" checked="" name="alarmas" tabindex="0" class="hidden"><label>Cortes de conectividad</label>
+                                        </div>
+                                    </div>
+                                    <div class="text-left eventToggle">
+                                        <div class="ui toggle checkbox checked">
+                                            <input type="checkbox" checked="" name="alarmas" tabindex="0" class="hidden"><label>Cortes de servicio eléctrico</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="fields">
+                                        <div class="eight wide field">
+                                            <label class="typeTitle">Seleccionar Fecha:</label>
+                                            <div class="ui calendar" id="desde" style="width: 100%">
+                                                <div class="ui input icon"><div class="ui popup calendar bottom left transition hidden" style="top: 45px; left: 0px; bottom: auto; right: auto;"><table class="ui celled center aligned unstackable table seven column day"><thead><tr><th colspan="7"><span class="link">Febrero 2020</span><span class="prev link"><i class="chevron left icon"></i></span><span class="next link disabled"><i class="chevron right icon"></i></span></th></tr><tr><th>D</th><th>L</th><th>M</th><th>M</th><th>J</th><th>V</th><th>S</th></tr></thead><tbody><tr><td class="link adjacent disabled">26</td><td class="link adjacent disabled">27</td><td class="link adjacent disabled">28</td><td class="link adjacent disabled">29</td><td class="link adjacent disabled">30</td><td class="link adjacent disabled">31</td><td class="link active focus">1</td></tr><tr><td class="link range">2</td><td class="link range">3</td><td class="link range">4</td><td class="link range">5</td><td class="link range">6</td><td class="link today range">7</td><td class="link disabled">8</td></tr><tr><td class="link disabled">9</td><td class="link disabled">10</td><td class="link disabled">11</td><td class="link disabled">12</td><td class="link disabled">13</td><td class="link disabled">14</td><td class="link disabled">15</td></tr><tr><td class="link disabled">16</td><td class="link disabled">17</td><td class="link disabled">18</td><td class="link disabled">19</td><td class="link disabled">20</td><td class="link disabled">21</td><td class="link disabled">22</td></tr><tr><td class="link disabled">23</td><td class="link disabled">24</td><td class="link disabled">25</td><td class="link disabled">26</td><td class="link disabled">27</td><td class="link disabled">28</td><td class="link disabled">29</td></tr><tr><td class="link adjacent disabled">1</td><td class="link adjacent disabled">2</td><td class="link adjacent disabled">3</td><td class="link adjacent disabled">4</td><td class="link adjacent disabled">5</td><td class="link adjacent disabled">6</td><td class="link adjacent disabled">7</td></tr></tbody></table></div>
+                                                    <i class="calendar alternate outline icon"></i>
+                                                    <input class="inputStyle" type="text" placeholder="Desde" id="fecha-desde" name="desde" autocomplete="off" required="" class="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eight wide field">
+                                            <label class="typeTitle">-</label>
+                                            <div class="ui calendar" id="hasta" style="width: 100%">
+                                                <div class="ui input icon"><div class="ui popup calendar top left transition hidden" style="top: auto; left: 0px; bottom: 45px; right: auto;"><table class="ui celled center aligned unstackable table seven column day"><thead><tr><th colspan="7"><span class="link">Febrero 2020</span><span class="prev link disabled"><i class="chevron left icon"></i></span><span class="next link disabled"><i class="chevron right icon"></i></span></th></tr><tr><th>D</th><th>L</th><th>M</th><th>M</th><th>J</th><th>V</th><th>S</th></tr></thead><tbody><tr><td class="link adjacent disabled">26</td><td class="link adjacent disabled">27</td><td class="link adjacent disabled">28</td><td class="link adjacent disabled">29</td><td class="link adjacent disabled">30</td><td class="link adjacent disabled">31</td><td class="link range">1</td></tr><tr><td class="link range">2</td><td class="link range">3</td><td class="link range">4</td><td class="link range">5</td><td class="link range">6</td><td class="link active today focus">7</td><td class="link disabled">8</td></tr><tr><td class="link disabled">9</td><td class="link disabled">10</td><td class="link disabled">11</td><td class="link disabled">12</td><td class="link disabled">13</td><td class="link disabled">14</td><td class="link disabled">15</td></tr><tr><td class="link disabled">16</td><td class="link disabled">17</td><td class="link disabled">18</td><td class="link disabled">19</td><td class="link disabled">20</td><td class="link disabled">21</td><td class="link disabled">22</td></tr><tr><td class="link disabled">23</td><td class="link disabled">24</td><td class="link disabled">25</td><td class="link disabled">26</td><td class="link disabled">27</td><td class="link disabled">28</td><td class="link disabled">29</td></tr><tr><td class="link adjacent disabled">1</td><td class="link adjacent disabled">2</td><td class="link adjacent disabled">3</td><td class="link adjacent disabled">4</td><td class="link adjacent disabled">5</td><td class="link adjacent disabled">6</td><td class="link adjacent disabled">7</td></tr></tbody></table></div>
+                                                    <i class="calendar alternate outline icon"></i>
+                                                    <input class="inputStyle" type="text" placeholder="Hasta" id="fecha-hasta" name="hasta" autocomplete="off" required="" class="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fields">
+                                        <div class="buttons rangeTime">
+                                            <button onclick="hoy(); return false;" class="mini ui button">Hoy</button>
+                                            <button onclick="ayer(); return false;" class="mini ui button">Ayer</button>
+                                            <button onclick="estaSemana(); return false;" class="mini ui button">Esta semana
+                                            </button>
+                                            <button onclick="esteMes(); return false;" class="mini ui button">Este mes</button>
+                                        </div>
+                                    </div>
+
+                                <div class="">
+                                    <a href="#" class="ui btnOk mtb-25">Consultar</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serpentine Chart -->
+                <div id="chartdiv" class="bg-white" style="height: 65vh; margin: 1em 0 1em 0;"></div>
+
+                <div class="ui two column grid equal height stackable">
+                    <div class="stretched row mb-25">
+                        <div class="column">
+                            <div class="eventContainer bg-white">
+                                <h5>Alarmas más recientes</h5>
+                                <div class="ui relaxed divided list">
+                                    <p class="ajustesDate">14 Diciembre <span>2019</span></p>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="eventContainer bg-white">
+                                <h5>Alarmas más antiguas</h5>
+                                <div class="ui relaxed divided list">
+                                    <p class="ajustesDate">14 Diciembre <span>2019</span></p>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="ajustesDate">14 Diciembre <span>2019</span></p>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="time">13:00</p>
+                                        <div class="content">
+                                            <p class="header">Corte servicio eléctrico</p>
+                                            <span class="description">Se reestablece el servicio 2019-12-14 | 15:46 hs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!--MODAL DE SELECCION DE DISPOSITIVOS-->
+<div class="ui modal customModal dispositivosModal">
+    <!--i class="close icon"></i-->
+    <div class="header">
+        Dispositivos
+    </div>
+    <div class="content">
+        <div class="ui two column grid equal height stackable">
+            <div class="row">
+                <div class="column organizacionCol">
+                    <h3>Organización</h3>
+                    <ul>
+                        <li class="empresaLi">
+                            <button class="ui button">Empresa 1</button>
+                        </li>
+                        <li class="zonaLi">
+                            <button class="ui button">Zona 1.1</button>
+                        </li>
+                        <li class="localizacionLi">
+                            <button class="ui button">Localización 1.1.1</button>
+                        </li>
+                        <li class="subLocalizacionLi">
+                            <button class="ui button">Sublocalización 1</button>
+                        </li>
+                        <li class="dispositivoLi">
+                            <button class="ui button">Dispositivo 1.1.1.1</button>
+                        </li>
+                        <li class="dispositivoLi">
+                            <button class="ui button">Dispositivo 1.1.1.2</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column gruposCol">
+                    <h3>Grupos</h3>
+                    <ul>
+                        <li class="grupoLi">
+                            <button class="ui button">Grupo 1</button>
+                        </li>
+                        <li class="grupoLi">
+                            <button class="ui button">Grupo 2</button>
+                        </li>
+                        <li class="grupoLi">
+                            <button class="ui button">Grupo 3</button>
+                        </li>
+                        <li class="grupoLi">
+                            <button class="ui button">Grupo 4</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <p><b>Su selección:</b> <span></span></p>
+        <div class="ui button cancelTextToInput">Cancelar</div>
+        <div class="ui button addTextToInput">Aceptar</div>
+    </div>
+</div>
+
+<!--MODAL DE SELECCION NUEVO... EN LISTA.PHP Y CONFIGURACION.PHP-->
+<div class="ui modal customModal newFormModal">
+    <!--i class="close icon"></i-->
+    <div class="header">
+        Nuevo
+    </div>
+    <div class="content">
+        <div class="ui one column grid equal height stackable">
+            <div class="row">
+                <div class="column">
+                    <!--FORMULARIO DE NUEVO...-->
+                    <form class="ui form gralForm" id="newForm">
+                        <div class="field">
+                            <label class="typeTitle">Empresa *</label>
+                            <div class="ui selection dropdown">
+                                <div class="default text textSelect">Seleccionar</div>
+                                <i class="dropdown icon"></i>
+                                <input type="hidden" class="getVlueOfNewSelect" name="gender">
+                                <div class="menu">
+                                    <div class="item" data-value="seleccionar" value="seleccionar" disable select>Seleccionar</div>
+                                    <div class="item" data-value="empresa" value="empresa">Empresa</div>
+                                    <div class="item" data-value="zona" value="zona">Zona</div>
+                                    <div class="item" data-value="localizacion" value="localizacion">Localización</div>
+                                    <div class="item" data-value="sublocalizacion" value="sublocalizacion">Sublocalización</div>
+                                    <div class="item" data-value="grupo" value="grupo">Grupo</div>
+                                    <div class="item" data-value="medidorvirtual" value="medidorvirtual">Medidor virtual</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui button cancelAndDismiss">Cancelar</div>
+        <div class="ui button nextFormClose">Siguiente</div>
+    </div>
+</div>
+
+<!--MODAL DE SELECCION DE DISPOSITIVOS-->
+<div class="ui modal customModal dispositivosModalEditInsta">
+    <!--i class="close icon"></i-->
+    <div class="header">
+        Editar
+    </div>
+    <div class="content">
+        <div class="ui two column grid equal height stackable">
+            <div class="row">
+                <div class="column gruposCol">
+                    <h3>Su selección</h3>
+                    <ul class="addLiToEdit">
+                        <!--li class="grupoLi">
+                            Primera selección
+                            <div class="deleteSelectionEdit"><i class="fas fa-times"></i></div>
+                        </li-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <!--div class="ui button cancelTextToInputEdit">Cancelar</div-->
+        <div class="ui button deleteAllElements">Eliminar todo</div>
+        <div class="ui button addTextToInputEdit">Aceptar</div>
+    </div>
+</div>
+
+<!--MODAL DE SELECCION DE DISPOSITIVOS-->
+<div class="ui modal customModal confirmDeleteAll">
+    <!--i class="close icon"></i-->
+    <!--div class="header">
+        Editar
+    </div-->
+    <div class="content">
+        <div class="ui one column grid equal height stackable">
+            <div class="row">
+                <div class="column gruposCol">
+                    <h3>¿Desea eliminar todos los elementos seleccionados?</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <!--div class="ui button cancelTextToInputEdit">Cancelar</div-->
+        <div class="ui button cancelDelete">Cancelar</div>
+        <div class="ui button confirmDelete">Aceptar</div>
+    </div>
+</div>
+
+<!--footer class="site-footer">
+    <div class="ui container">
+        <a href="#" class="logo logo--size-sm logo--opacity-30"></a>
+        <ul class="site-footer__data">
+            <li>Sucre 942, PB2, CABA.</li>
+            <li>(011) 6091-4859</li>
+            <li>Ventas: ventas@powermeter.com.ar</li>
+            <li>Consultas Técnicas: info@powermeter.com.ar</li>
+        </ul>
+    </div>
+</footer-->
+
+<footer class="home-footer">
+    <div class="ui grid middle aligned">
+      <div class="one wide column aligned">
+      </div>
+      <div class="one wide column aligned lineImage">
+        <img class="lineImage" src="assets/images/pie-logo-home.png" alt="">
+      </div>
+      <div class="column w-1 lineImage">
+        <img src="assets/images/pie-linea-horizontal.png" alt="">
+      </div>
+      <div class="column aligned w-15 lineImage">
+        <img src="assets/images/pie-logo-power.png" alt="">
+      </div>
+      <div class="column w-1 lineImage">
+        <img src="assets/images/pie-linea-horizontal.png" alt="">
+      </div>
+      <div class="column w-20 lineImage">
+        <ul class="site-footer-data">
+          <li>Sucre 942, PB2, CABA.</li>
+          <li>(011) 6091-4859</li>
+          <li>Ventas: ventas@powermeter.com.ar</li>
+          <li>Consultas Técnicas: info@powermeter.com.ar</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<!-- jQuery (https://jquery.com) -->
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+
+<!-- Semantic UI (https://semantic-ui.com) -->
+<script type="text/javascript" src="assets/js/semantic.min.js"></script>
+
+<!-- Semantic UI Calendar (https://github.com/mdehoog/Semantic-UI-Calendar) -->
+<script type="text/javascript" src="assets/js/calendar.min.js"></script>
+
+<!-- Slick carousel (http://kenwheeler.github.io/slick) -->
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+
+<!-- Form validation (https://semantic-ui.com/behaviors/form.html) -->
+<script type="text/javascript" src="assets/js/form.min.js"></script>
+
+<!-- Funciones propias -->
+<script type="text/javascript" src="assets/js/app.min.js"></script>
+
+<script>
+    var colores_fases_solidos = {
+        'R': 'rgba(255, 99, 132, 0.8)',
+        'S': 'rgba(0, 195, 165, 0.8)',
+        'T': 'rgba(255, 180, 40, 0.8)',
+        'total': 'rgba(100, 100, 100, 0.8)',
+    };
+
+    var colores_fases_transparentes = {
+        'R': 'rgba(255, 99, 132, 0.3)',
+        'S': 'rgba(0, 195, 165, 0.3)',
+        'T': 'rgba(255, 180, 40, 0.3)',
+        'total': 'rgba(100, 100, 100, 0.3)',
+    }
+
+    var colores_simples_solidos = {
+        'principal': 'rgba(0, 195, 165, 0.8)',
+        'secundario': 'rgba(69, 69, 69, 0.8)',
+    }
+
+    var colores_simples_transparentes = {
+        'principal': 'rgba(0, 195, 165, 0.3)',
+        'secundario': 'rgba(69, 69, 69, 0.3)',
+    }
+</script>
+
+<script>
+    $('.ui.pointing.dropdown')
+      .dropdown()
+    ;
+
+    $('.multi.ui.normal.dropdown')
+      .dropdown({
+        maxSelections: 100
+      })
+    ;
+
+</script>
+<script type="text/javascript" src="assets/js/gauge.min.js"></script>
+<script type="text/javascript" src="../www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="../www.amcharts.com/lib/3/serial.js"></script>
+<script type="text/javascript" src="../www.amcharts.com/lib/3/pie.js"></script>
+<script src="../cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="../cdn.datatables.net/1.10.19/js/dataTables.semanticui.min.js"></script>
+<script src="../cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="../cdn.datatables.net/responsive/2.2.3/js/responsive.semanticui.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+    <!-- Serpentine Chart Resources -->
+    <script src="../www.amcharts.com/lib/4/core.js"></script>
+    <script src="../www.amcharts.com/lib/4/charts.js"></script>
+    <script src="../www.amcharts.com/lib/4/plugins/timeline.js"></script>
+    <script src="../www.amcharts.com/lib/4/plugins/bullets.js"></script>
+    <script src="../www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!-- Chart code -->
+    <script>
+        am4core.ready(function() {
+
+        // Themes begin
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        var chart = am4core.create("chartdiv", am4plugins_timeline.SerpentineChart);
+        chart.curveContainer.padding(20,20,20,20);
+        chart.levelCount = 8;
+        chart.orientation = "horizontal";
+        chart.fontSize = 11;
+
+        var colorSet = new am4core.ColorSet();
+        colorSet.saturation = 0.6;
+
+        chart.data = [ {
+          "category": "Module #1",
+          "start": "2016-01-10",
+          "end": "2016-01-13",
+          "color": colorSet.getIndex(0),
+          "task": "Gathering requirements"
+        }, {
+          "category": "Module #1",
+          "start": "2016-02-05",
+          "end": "2016-04-18",
+          "color": colorSet.getIndex(0),
+          "task": "Development"
+        }, {
+          "category": "Module #2",
+          "start": "2016-01-08",
+          "end": "2016-01-10",
+          "color": colorSet.getIndex(5),
+          "task": "Gathering requirements"
+        }, {
+          "category": "Module #2",
+          "start": "2016-01-12",
+          "end": "2016-01-15",
+          "color": colorSet.getIndex(5),
+          "task": "Producing specifications"
+        }, {
+          "category": "Module #2",
+          "start": "2016-01-16",
+          "end": "2016-02-05",
+          "color": colorSet.getIndex(5),
+          "task": "Development"
+        }, {
+          "category": "Module #2",
+          "start": "2016-02-10",
+          "end": "2016-02-18",
+          "color": colorSet.getIndex(5),
+          "task": "Testing and QA"
+        }, {
+          "category": "",
+          "task": ""
+        },{
+          "category": "Module #3",
+          "start": "2016-01-01",
+          "end": "2016-01-19",
+          "color": colorSet.getIndex(9),
+          "task": "Gathering requirements"
+        }, {
+          "category": "Module #3",
+          "start": "2016-02-01",
+          "end": "2016-02-10",
+          "color": colorSet.getIndex(9),
+          "task": "Producing specifications"
+        }, {
+          "category": "Module #3",
+          "start": "2016-03-10",
+          "end": "2016-04-15",
+          "color": colorSet.getIndex(9),
+          "task": "Development"
+        }, {
+          "category": "Module #3",
+          "start": "2016-04-20",
+          "end": "2016-04-30",
+          "color": colorSet.getIndex(9),
+          "task": "Testing and QA"
+        }, {
+          "category": "Module #4",
+          "start": "2016-01-15",
+          "end": "2016-02-12",
+          "color": colorSet.getIndex(15),
+          "task": "Gathering requirements"
+        },{
+          "category": "Module #4",
+          "start": "2016-02-25",
+          "end": "2016-03-10",
+          "color": colorSet.getIndex(15),
+          "task": "Development"
+        }, {
+          "category": "Module #4",
+          "start": "2016-03-23",
+          "end": "2016-04-29",
+          "color": colorSet.getIndex(15),
+          "task": "Testing and QA"
+        } ];
+
+        chart.dateFormatter.dateFormat = "yyyy-MM-dd";
+        chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+
+        var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+        categoryAxis.dataFields.category = "category";
+        categoryAxis.renderer.grid.template.disabled = true;
+        categoryAxis.renderer.labels.template.paddingRight = 25;
+        categoryAxis.renderer.minGridDistance = 10;
+        categoryAxis.renderer.innerRadius = -60;
+        categoryAxis.renderer.radius = 60;
+
+        var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+        dateAxis.renderer.minGridDistance = 70;
+        dateAxis.baseInterval = { count: 1, timeUnit: "day" };
+
+        dateAxis.renderer.tooltipLocation = 0;
+        dateAxis.startLocation = -0.5;
+        dateAxis.renderer.line.strokeDasharray = "1,4";
+        dateAxis.renderer.line.strokeOpacity = 0.7;
+        dateAxis.tooltip.background.fillOpacity = 0.2;
+        dateAxis.tooltip.background.cornerRadius = 5;
+        dateAxis.tooltip.label.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
+        dateAxis.tooltip.label.paddingTop = 7;
+
+        var labelTemplate = dateAxis.renderer.labels.template;
+        labelTemplate.verticalCenter = "middle";
+        labelTemplate.fillOpacity = 0.7;
+        labelTemplate.background.fill =  new am4core.InterfaceColorSet().getFor("background");
+        labelTemplate.background.fillOpacity = 1;
+        labelTemplate.padding(7,7,7,7);
+
+        var categoryAxisLabelTemplate = categoryAxis.renderer.labels.template;
+        categoryAxisLabelTemplate.horizontalCenter = "left";
+        categoryAxisLabelTemplate.adapter.add("rotation", function (rotation, target) {
+          var position = dateAxis.valueToPosition(dateAxis.min);
+          return dateAxis.renderer.positionToAngle(position) + 90;
+        })
+
+        var series1 = chart.series.push(new am4plugins_timeline.CurveColumnSeries());
+        series1.columns.template.height = am4core.percent(20);
+        series1.columns.template.tooltipText = "{task}: [bold]{openDateX}[/] - [bold]{dateX}[/]";
+
+        series1.dataFields.openDateX = "start";
+        series1.dataFields.dateX = "end";
+        series1.dataFields.categoryY = "category";
+        series1.columns.template.propertyFields.fill = "color"; // get color from data
+        series1.columns.template.propertyFields.stroke = "color";
+        series1.columns.template.strokeOpacity = 0;
+
+        var bullet = new am4charts.CircleBullet();
+        series1.bullets.push(bullet);
+        bullet.circle.radius = 3;
+        bullet.circle.strokeOpacity = 0;
+        bullet.propertyFields.fill = "color";
+        bullet.locationX = 0;
+
+
+        var bullet2 = new am4charts.CircleBullet();
+        series1.bullets.push(bullet2);
+        bullet2.circle.radius = 3;
+        bullet2.circle.strokeOpacity = 0;
+        bullet2.propertyFields.fill = "color";
+        bullet2.locationX = 1;
+
+        chart.scrollbarX = new am4core.Scrollbar();
+        chart.scrollbarX.align = "center"
+        chart.scrollbarX.width = am4core.percent(90);
+
+        var cursor = new am4plugins_timeline.CurveCursor();
+        chart.cursor = cursor;
+        cursor.xAxis = dateAxis;
+        cursor.yAxis = categoryAxis;
+        cursor.lineY.disabled = true;
+        cursor.lineX.strokeDasharray = "1,4";
+        cursor.lineX.strokeOpacity = 1;
+
+        dateAxis.renderer.tooltipLocation2 = 0;
+        categoryAxis.cursorTooltipEnabled = false;
+
+        }); // end am4core.ready()
+    </script>
+</body>
+
+<!-- Mirrored from maquetapremium.debluebyte.com/eventos.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Nov 2020 16:57:12 GMT -->
+</html>
